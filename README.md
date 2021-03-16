@@ -8,6 +8,6 @@ POC of Master Detail flow with:
 
 ![master_detail_flow][gif]
 
-[gif]: https://github.com/Jan-Stepien/flutter-master-detail/blob/main/github_assets/master-detail-flow.gif "Gif of app"
+[gif]: https://github.com/Jan-Stepien/flutter-master-detail/blob/master/github_assets/master-detail-flow.gif "Gif of app"
 
 
