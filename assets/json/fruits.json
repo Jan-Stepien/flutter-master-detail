@@ -1,0 +1,65 @@
+{
+  "fruits": 
+  [
+    {
+      "name": "Apple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/265px-Red_Apple.jpg",
+      "weight": 0.1,
+      "price": 35
+    },
+    {
+      "name": "Banana",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bananas_white_background_DS.jpg/320px-Bananas_white_background_DS.jpg",
+      "weight": 0.1,
+      "price": 12
+    },
+    {
+      "name": "Grapes",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/320px-Table_grapes_on_white.jpg",
+      "weight": 0.1,
+      "price": 45
+    },
+    {
+      "name": "Pineapple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/286px-Pineapple_and_cross_section.jpg",
+      "weight": 11,
+      "price": 200
+    },
+    {
+      "name": "Banana",
+      "image": "http://www.pngall.com/wp-content/uploads/2016/04/Banana-PNG.png",
+      "weight": 100,
+      "price": 330
+    },
+    {
+      "name": "Apple",
+      "image": "https://images.freshop.com/00852201002228/ad2f58915e3267700906f1025ef8917f_medium.png",
+      "weight": 9,
+      "price": 0.1
+    },
+    {
+      "name": "Peach",
+      "image": "http://icons.iconarchive.com/icons/artbees/paradise-fruits/256/Peach-icon.png",
+      "weight": 3,
+      "price": 7
+    },
+    {
+      "name": "Strawberry",
+      "weight": 0.4,
+      "price": 11,
+      "image": "https://static.wixstatic.com/media/2cd43b_7415c9b79d664508b6f62a6953403b75~mv2.png/v1/fill/w_256,h_256,fp_0.50_0.50/2cd43b_7415c9b79d664508b6f62a6953403b75~mv2.png"
+    },
+    {
+      "name": "Tomato",
+      "weight": 1000,
+      "price": 99,
+      "image": "https://www.kampexport.com/sites/kampexport.com/files/images/legume/image/tomates_256_1.jpg"
+    },
+    {
+      "name": "Cherry",
+      "weight": 3,
+      "price": 4,
+      "image": "https://cdn.shopify.com/s/files/1/0610/2881/products/cherries.jpg?v=1446676415"
+    }
+  ]
+}
