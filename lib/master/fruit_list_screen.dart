@@ -11,38 +11,70 @@ class FruitListScreen extends StatefulWidget {
 
 class _FruitListScreenState extends State<FruitListScreen> {
   List<Fruit> fruits = [];
+  List<Fruit> filteredFruits = [];
+  TextEditingController _searchController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
-    DataService.fruits(context)
-        .then((value) => setState(() => this.fruits = value));
+    DataService.fruits(context).then(
+        (value) => setState(() => {fruits = value, filteredFruits = fruits}));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-            child: ListView.builder(
-      itemCount: this.fruits.length,
-      itemBuilder: (context, index) => Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: ListTile(
-          leading: SizedBox(
-            width: MediaQuery.of(context).size.width / 4,
-            child: Align(
-                alignment: Alignment.center,
-                child: FruitImage(imageUrl: this.fruits[index].imageUrl)),
+        body: GestureDetector(
+          onTap: () => FocusScope.of(context).unfocus(),
+                  child: SafeArea(
+              child: Column(children: [
+      ListTile(
+          leading: Icon(Icons.search),
+          title: TextField(
+            controller: _searchController,
+            decoration: InputDecoration(hintText: 'Search fruit'),
+            onChanged: _fruitSearchChanged,
           ),
-          title: Text(
-            this.fruits[index].toString() ?? 'No fruit here',
-          ),
-          onTap: () => Navigator.of(context).pushNamed(
-              FruitDetailScreen.routeName,
-              arguments: FruitDetailArguments(fruit: this.fruits[index])),
-        ),
       ),
-    )));
+      SizedBox(
+          height: MediaQuery.of(context).size.height * 0.8,
+          child: ListView.builder(
+            itemCount: this.filteredFruits.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ListTile(
+                leading: SizedBox(
+                  width: MediaQuery.of(context).size.width / 4,
+                  child: Align(
+                      alignment: Alignment.center,
+                      child: FruitImage(
+                          imageUrl: this.filteredFruits[index].imageUrl)),
+                ),
+                title: Text(
+                  this.filteredFruits[index].toString() ?? 'No fruit here',
+                ),
+                onTap: () => Navigator.of(context).pushNamed(
+                    FruitDetailScreen.routeName,
+                    arguments:
+                        FruitDetailArguments(fruit: this.filteredFruits[index])),
+              ),
+            ),
+          ),
+      ),
+    ])),
+        ));
+  }
+
+  void _fruitSearchChanged(String value) {
+    if (value.isEmpty) {
+      filteredFruits = fruits;
+    } else {
+      filteredFruits = fruits
+          .where(
+              (fruit) => fruit.name.toLowerCase().contains(value.toLowerCase()))
+          .toList();
+    }
+    setState(() {});
   }
 }
 
