@@ -17,26 +17,28 @@ class _FruitListScreenState extends State<FruitListScreen> {
   @override
   void initState() {
     super.initState();
-    DataService.fruits(context).then(
-        (value) => setState(() => {fruits = value, filteredFruits = fruits}));
+    DataService.fruitsFromGenerator(context).then((value) => setState( () => {
+          fruits = value,
+          filteredFruits = value,
+        }));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: GestureDetector(
-          onTap: () => FocusScope.of(context).unfocus(),
-                  child: SafeArea(
-              child: Column(children: [
-      ListTile(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: SafeArea(
+          child: Column(children: [
+        ListTile(
           leading: Icon(Icons.search),
           title: TextField(
             controller: _searchController,
             decoration: InputDecoration(hintText: 'Search fruit'),
             onChanged: _fruitSearchChanged,
           ),
-      ),
-      SizedBox(
+        ),
+        SizedBox(
           height: MediaQuery.of(context).size.height * 0.8,
           child: ListView.builder(
             itemCount: this.filteredFruits.length,
@@ -55,14 +57,14 @@ class _FruitListScreenState extends State<FruitListScreen> {
                 ),
                 onTap: () => Navigator.of(context).pushNamed(
                     FruitDetailScreen.routeName,
-                    arguments:
-                        FruitDetailArguments(fruit: this.filteredFruits[index])),
+                    arguments: FruitDetailArguments(
+                        fruit: this.filteredFruits[index])),
               ),
             ),
           ),
-      ),
-    ])),
-        ));
+        ),
+      ])),
+    ));
   }
 
   void _fruitSearchChanged(String value) {
