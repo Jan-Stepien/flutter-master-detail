@@ -3,63 +3,73 @@
   [
     {
       "name": "Apple",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/265px-Red_Apple.jpg",
-      "weight": 0.1,
-      "price": 35
+      "description": "An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/265px-Red_Apple.jpg"
     },
     {
       "name": "Banana",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bananas_white_background_DS.jpg/320px-Bananas_white_background_DS.jpg",
-      "weight": 0.1,
-      "price": 12
+      "description": "A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called 'plantains', distinguishing them from dessert bananas. ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bananas_white_background_DS.jpg/320px-Bananas_white_background_DS.jpg"
     },
     {
       "name": "Grapes",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/320px-Table_grapes_on_white.jpg",
-      "weight": 0.1,
-      "price": 45
+      "description": "A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis. Grapes can be eaten fresh as table grapes or they can be used for making wine, jam, grape juice, jelly, grape seed extract, raisins, vinegar, and grape seed oil. Grapes are a non-climacteric type of fruit, generally occurring in clusters.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/320px-Table_grapes_on_white.jpg"
     },
     {
       "name": "Pineapple",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/286px-Pineapple_and_cross_section.jpg",
-      "weight": 11,
-      "price": 200
-    },
-    {
-      "name": "Banana",
-      "image": "http://www.pngall.com/wp-content/uploads/2016/04/Banana-PNG.png",
-      "weight": 100,
-      "price": 330
-    },
-    {
-      "name": "Apple",
-      "image": "https://images.freshop.com/00852201002228/ad2f58915e3267700906f1025ef8917f_medium.png",
-      "weight": 9,
-      "price": 0.1
+      "description": "The pineapple (Ananas comosus) is a tropical plant with an edible fruit and the most economically significant plant in the family Bromeliaceae. The pineapple is indigenous to South America, where it has been cultivated for many centuries.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/286px-Pineapple_and_cross_section.jpg"
     },
     {
       "name": "Peach",
-      "image": "http://icons.iconarchive.com/icons/artbees/paradise-fruits/256/Peach-icon.png",
-      "weight": 3,
-      "price": 7
+      "description": "The peach (Prunus persica) is a deciduous tree native to the region of Northwest China between the Tarim Basin and the north slopes of the Kunlun Mountains, where it was first domesticated and cultivated. It bears edible juicy fruits with various characteristics, most called peaches and others (the glossy-skinned varieties), nectarines.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Autumn_Red_peaches.jpg/220px-Autumn_Red_peaches.jpg"
     },
     {
       "name": "Strawberry",
-      "weight": 0.4,
-      "price": 11,
+      "description": "The garden strawberry (or simply strawberry; 'Fragaria ananassa') is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness. ",
       "image": "https://static.wixstatic.com/media/2cd43b_7415c9b79d664508b6f62a6953403b75~mv2.png/v1/fill/w_256,h_256,fp_0.50_0.50/2cd43b_7415c9b79d664508b6f62a6953403b75~mv2.png"
     },
     {
       "name": "Tomato",
-      "weight": 1000,
-      "price": 99,
+      "description": "The tomato is the edible berry of the plant Solanum lycopersicum, commonly known as a tomato plant. The species originated in western South America and Central America. The Nahuatl (the language used by the Aztecs) word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived.",
       "image": "https://www.kampexport.com/sites/kampexport.com/files/images/legume/image/tomates_256_1.jpg"
     },
     {
       "name": "Cherry",
-      "weight": 3,
-      "price": 4,
+      "description": "A cherry is the fruit of many plants of the genus Prunus, and is a fleshy drupe (stone fruit). Commercial cherries are obtained from cultivars of several species, such as the sweet Prunus avium and the sour Prunus cerasus.",
       "image": "https://cdn.shopify.com/s/files/1/0610/2881/products/cherries.jpg?v=1446676415"
+    },
+    {
+      "name": "Orange",
+      "description": "The orange is the fruit of various citrus species in the family Rutaceae. It primarily refers to 'Citrus sinensis', which is also called sweet orange, to distinguish it from the related 'Citrus aurantium', referred to as bitter orange. The sweet orange reproduces asexually .Varieties of sweet orange arise through mutations.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/220px-Oranges_-_whole-halved-segment.jpg"
+    },
+    {
+      "name": "Blueberry",
+      "description": "Blueberries are perennial flowering plants with blue or purple berries. They are classified in the section Cyanococcus within the genus Vaccinium. Vaccinium also includes cranberries, bilberries, huckleberries and Madeira blueberries. Commercial blueberries—both wild (lowbush) and cultivated (highbush)—are all native to North America.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dish_of_blueberries.jpg/235px-Dish_of_blueberries.jpg"
+    },
+    {
+      "name": "Mango",
+      "description": "A mango is a stone fruit produced from numerous species of tropical trees belonging to the flowering plant genus Mangifera,",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Hapus_Mango.jpg/220px-Hapus_Mango.jpg"
+    },
+    {
+      "name": "Grapefruit",
+      "description": "Grapefruit is a citrus hybrid originating in Barbados as an accidental cross between the sweet orange (C. sinensis) and the pomelo or shaddock (C. maxima), both of which were introduced from Asia in the 17th century. When found, it was called the forbidden fruit. In the past it was referred to as the pomelo, but that term is now the common name for Citrus maxima.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dish_of_blueberries.jpg/235px-Dish_of_blueberries.jpg"
+    },
+    {
+      "name": "Lemon",
+      "description": "The tree's ellipsoidal yellow fruit is used for culinary and non-culinary purposes throughout the world, primarily for its juice, which has both culinary and cleaning uses. The pulp and rind are also used in cooking and baking. The juice of the lemon is about 5% to 6% citric acid, with a pH of around 2.2, giving it a sour taste. The distinctive sour taste of lemon juice makes it a key ingredient in drinks and foods such as lemonade and lemon meringue pie.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Lemon_-_whole_and_split.jpg/220px-Lemon_-_whole_and_split.jpg"
+    },
+    {
+      "name": "Plum",
+      "description": "A plum is a fruit of some species in Prunus subg. Prunus. Mature plum fruit may have a dusty-white waxy coating that gives them a glaucous appearance. This is an epicuticular wax coating and is known as 'wax bloom'. Dried plum fruits are called 'dried plums' or prunes, having a wrinkled appearance.[",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Plums_African_Rose_-_whole%2C_halved_and_slice.jpg/220px-Plums_African_Rose_-_whole%2C_halved_and_slice.jpg"
     }
   ]
 }

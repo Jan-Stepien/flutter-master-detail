@@ -34,7 +34,13 @@ class FruitDetailScreen extends StatelessWidget {
                   color: Colors.black,
                 ),
                 textAlign: TextAlign.center,
-              )
+              ),
+              Text(fruit.description,
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.justify)
             ],
           ),
         ),

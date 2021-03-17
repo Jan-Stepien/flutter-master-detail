@@ -1,17 +1,17 @@
 class Fruit {
   String name;
   String imageUrl;
-  num price;
+  String description;
 
   Fruit.fromJson(Map<String, dynamic> json)
       : name = json["name"],
         imageUrl = json["image"],
-        price = json["price"];
+        description = json["description"];
 
   Map<String, dynamic> toJson() => {
         'name': name,
         'image': imageUrl,
-        'price': price,
+        'description': description
       };
   @override
   String toString() {
