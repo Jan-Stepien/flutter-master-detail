@@ -4,7 +4,9 @@ POC of Master Detail flow with:
 - simple named routing with parameters
 - loading Image.network with local Image.asset placeholder
 - parsing json collection object to data model
-- scrollable ListView
+- scrollable ```ListView```
+- json_serializer
+- filter on ```ListView```
 
 
 # Json generation:
