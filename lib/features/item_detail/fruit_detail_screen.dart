@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:master_detail/master/fruit_list_screen.dart';
+import 'package:master_detail/features/master/fruit_list_screen.dart';
 import 'package:master_detail/shared/model/fruit.dart';
 
 class FruitDetailScreen extends StatelessWidget {

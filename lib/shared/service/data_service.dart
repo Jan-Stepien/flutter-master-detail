@@ -12,13 +12,4 @@ class DataService{
     var list = (map['fruits'] as List);
     return list.map<Fruit>((e) => Fruit.fromJson(e)).toList() ?? [];
   }
-
-  static Future<List<Fruit>> fruitsFromGenerator(BuildContext context) async{
-    var jsonText = await DefaultAssetBundle.of(context)
-        .loadString('assets/json/fruits.json');
-    Map<String,dynamic> map = jsonDecode(jsonText);
-    var list = (map['fruits'] as List);
-    return list.map<Fruit>((e) => Fruit.fromJson(e)).toList() ?? [];
-  }
-
 }

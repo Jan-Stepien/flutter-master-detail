@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:master_detail/item_detail/fruit_detail_screen.dart';
+import 'package:master_detail/features/item_detail/fruit_detail_screen.dart';
 import 'package:master_detail/shared/model/fruit.dart';
 import 'package:master_detail/shared/service/data_service.dart';
 
@@ -17,7 +17,7 @@ class _FruitListScreenState extends State<FruitListScreen> {
   @override
   void initState() {
     super.initState();
-    DataService.fruitsFromGenerator(context).then((value) => setState( () => {
+    DataService.fruits(context).then((value) => setState(() => {
           fruits = value,
           filteredFruits = value,
         }));

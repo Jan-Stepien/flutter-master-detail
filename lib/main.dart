@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:master_detail/item_detail/fruit_detail_screen.dart';
-import 'package:master_detail/master/fruit_list_screen.dart';
+
+import 'features/item_detail/fruit_detail_screen.dart';
+import 'features/master/fruit_list_screen.dart';
 
 void main() {
   runApp(MyApp());
